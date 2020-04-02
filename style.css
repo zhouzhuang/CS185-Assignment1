@@ -2,8 +2,11 @@
     display: flex;
 }
 
-.tab {
+.link{
     width: 50px;
+    margin-right: 1em;
+    word-wrap: normal;
+    display: inline-block;
 }
 .tab-extra{
     flex-grow: 10;
