@@ -1,31 +1,26 @@
-.header{
-    display: flex;
+
+body{
+    line-height:1.6em;
 }
 
-.link{
-    width: 50px;
-    margin-right: 1em;
-    word-wrap: normal;
-    display: inline-block;
+#main-header{
+	text-align:center;
+	padding:10px;
 }
-.tab-extra{
-    flex-grow: 10;
-}
-
-.nav-bar > div{
-    padding: 10px;
+#main-footer{
+	text-align:center;
+	font-size:12px;
 }
 
-.img{
-    width: 10vw;
-    height: 10vh;
+.image img{
+    width: 50%;
+    height: 50%;
+    float: left;
 }
-.imgChild{
+
+.p1 span{
     vertical-align: middle;
 }
 
-.inner {
-    align-items : center;
 
-}
 
