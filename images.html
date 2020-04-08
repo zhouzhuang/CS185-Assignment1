@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charest="utf-8">
+        <title>Images Collection</title>
+        <link rel="stylesheet" type = "text/css" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="images.html">Images</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+    <!--language translator begin-->
+	<p id = "hi">
+		Welcome everyone!
+	</p>
+	<script>
+		//define langauge anchors
+	var dataReload = document.querySelectorAll("[data-reload]");
+		//language translations
+		var language = {
+			chin: {
+				welcome: “欢迎大家”
+			}
+		};
+		//define language via window hash
+		if (window.location.hash){
+			if(window.location.hash ==="#chin"){
+				hi.textContent = language.chin.welcome;
+			}
+		}
+		// define language reload onclick iteration
+		function timeFunction(){
+			setTimeout(function(){history.go(0);},200);
+		}
+		for (i = 0; i <= dataReload.length) {
+			dataReload[1].onclick = function() {
+				location.reload(true);
+			};
+		}
+	</script>
+	<!-- langauge translator ends-->
+        <div class="imagess">
+            <h1> Front page </h1>
+           
+
+
+        </div>
+
+    </body>
+
+</html>
+
