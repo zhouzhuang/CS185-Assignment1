@@ -13,46 +13,55 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="images.html">Images</a></li>
 				<li><a href="videos.html">Videos</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="projects.html">Projects</a></li>
 			</ul>
 		</div>
 	</nav>
-    <!--language translator begin-->
-	<p id = "hi">
-		Welcome everyone!
-	</p>
-	<script>
-		//define langauge anchors
-	var dataReload = document.querySelectorAll("[data-reload]");
-		//language translations
-		var language = {
-			chin: {
-				welcome: “欢迎大家”
-			}
-		};
-		//define language via window hash
-		if (window.location.hash){
-			if(window.location.hash ==="#chin"){
-				hi.textContent = language.chin.welcome;
-			}
-		}
-		// define language reload onclick iteration
-		function timeFunction(){
-			setTimeout(function(){history.go(0);},200);
-		}
-		for (i = 0; i <= dataReload.length) {
-			dataReload[1].onclick = function() {
-				location.reload(true);
-			};
-		}
-	</script>
-	<!-- langauge translator ends-->
-        <div class="imagess">
-            <h1> Front page </h1>
+
+     <h1> Images </h1>
+    <div class="row">
+        <div class="column">
            
+            <a href="images/animal-crossing-new-horizons-switch-screenshot01.jpg">
+			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot01.jpg" alt="Animal Crossing1">
+			</a> 
+		
 
+            <a href="images/animal-crossing-new-horizons-switch-screenshot02.jpg">
+			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot02.jpg" alt="Animal Crossing2">
+			</a>
+            <a href="images/animal-crossing-new-horizons-switch-screenshot04.jpg">
+			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot04.jpg" alt="Animal Crossing4">
+			</a> 
 
+			<a href="images/01_3DS_AnimalCrossingNL_DCC_Mayor_01.jpg">
+			<img class = "img-img" src="images/01_3DS_AnimalCrossingNL_DCC_Mayor_01.jpg" alt="Animal Crossing Mayor 01">
+			</a> 
+			<a href="images/02_3DS_AnimalCrossingNL_DCC_Mayor_02.jpg">
+			<img class = "img-img" src="images/02_3DS_AnimalCrossingNL_DCC_Mayor_02.jpg" alt="Animal Crossing Mayor 02">
+			</a> 
+			<a href="images/03_3DS_AnimalCrossingNL_DCC_Mayor_03.jpg">
+			<img class = "img-img" src="images/03_3DS_AnimalCrossingNL_DCC_Mayor_03.jpg" alt="Animal Crossing Mayor 03">
+			</a> 
+
+			<a href="images/08_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_01.jpg">
+			<img class = "img-img" src="images/08_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_01.jpg" alt="Animal Crossing Island 01">
+			</a> 
+			<a href="images/07_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_02.jpg">
+			<img class = "img-img" src="images/07_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_02.jpg" alt="Animal Crossing Island 02">
+			</a> 
+
+			<a href="images/05_3DS_AnimalCrossingNL_DCC_Customization_02.jpg">
+			<img class = "img-img" src="images/05_3DS_AnimalCrossingNL_DCC_Customization_02.jpg" alt="Animal Crossing Customized">
+			</a> 
+
+			<p> <em>A series of screenshots from Animal Crossing:New Leaf</em> </p>
         </div>
+    </div>
+    
+	<footer id="main-footer">
+	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p>
+</footer>
 
     </body>
 
