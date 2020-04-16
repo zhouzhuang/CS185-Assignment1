@@ -11,7 +11,7 @@
 		<div class="container">
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="images.html">Images</a></li>
+				<li><a class="current" href="images.html">Images</a></li>
 				<li><a href="videos.html">Videos</a></li>
 				<li><a href="projects.html">Projects</a></li>
 			</ul>
@@ -26,7 +26,6 @@
 			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot01.jpg" alt="Animal Crossing1">
 			</a> 
 		
-
             <a href="images/animal-crossing-new-horizons-switch-screenshot02.jpg">
 			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot02.jpg" alt="Animal Crossing2">
 			</a>
@@ -58,6 +57,12 @@
 			<p> <em>A series of screenshots from Animal Crossing:New Leaf</em> </p>
         </div>
     </div>
+<script src="main.js" type="text/javascript">
+document.getElementById("img-img").addEventListener("click",function()
+{
+	var box1 = document.getElementById("img-img")
+})
+</script>
     
 	<footer id="main-footer">
 	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p>
