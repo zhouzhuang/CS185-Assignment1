@@ -30,14 +30,39 @@
 		<div class = "pro2">
 		<a href="https://cs56-s20-zhouzhuang-lab04.herokuapp.com">
 			<img src="projects/RatCal.jfif" alt="Rational Number Calculator"></a>
-			<span><b>Calculator:</b> <em>Doing simple calculations like addition,subtraction, and multiplication </em></span>
-			
+			<span> <b>Basic Calculator:</b> <em> Simple Calculations</em></span>
 		</div>
 
 
 	<footer id="main-footer">
 	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p></footer>
 	
+<!-- Back to top botton begins-->
+<!-- code comes from W3schools, link: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+<button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- Back to top botton ends -->
     </body>
 
 </html>

@@ -79,22 +79,42 @@
 	
 <!-- Favorite snack starts -->
 	<div>
-		
-			<div class="image-index" >
 			<h2>About me</h2>
-			<a href="images/pistachios.jfif">
-			<img src="images/pistachios.jfif" alt="Pistachios in a bowl" >
-			</a>
-			<span> Pistachios are my favorite snack. </span>
-			<span> <em>The pistachio, a member of the cashew family, 
+			
+			<div id="image-index" >
+			<div>
+			<img src="images/pistachios.jfif" alt="Pistachios in a bowl"  >
+			</a></div>
+
+			<span > Pistachios are my favorite snack. <em>The pistachio, a member of the cashew family, 
 			is a small tree originating from Central Asia and the Middle East.
 			The tree produces seeds that are widely consumed as food. 
-			Pistacia vera often is confused with other species in the genus Pistacia that are also known as pistachio</em></span>
-			</div>
-		
+			Pistacia vera often is confused with other species in the genus Pistacia that are also known as pistachio.</em>
+			<br><br>
+			Pistachio nuts are not only tasty and fun to eat but also super healthy.
 
+			These edible seeds of the Pistacia vera tree contain healthy fats and are a good source of protein, fiber, and antioxidants.
+
+			What’s more, they contain several essential nutrients and can aid weight loss and heart and gut health.
+
+			Interestingly, people have been eating pistachios since 7000 BC. Nowadays, they're very popular in many dishes, including ice cream and desserts (1Trusted Source).
+
+			Here are 9 evidence-based health benefits of pistachios.
+
+			<br><br>
+			What's more, they're delicious, versatile, and fun to eat. For most people, including pistachios in their diet is a great way to improve overall health.
+
+</span>
 			
-		
+			</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $('#image-index1').on("click", function(){
+         $('#mimage-index2').toggle();
+      });
+   });
+</script>
 	
 <!-- Favorite snack ends -->
 
@@ -103,10 +123,9 @@
 	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p>
 </footer>
 
-<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
-  <strong>when the user starts to scroll the page</strong>.</div>
-<!-- JavaScript begins-->
 
+<!-- Back to top botton begins-->
+<!-- code comes from W3schools, link: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
 
 <script>
@@ -130,7 +149,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-
+<!-- Back to top bottom ends-->
 </body>
 
 </html>
