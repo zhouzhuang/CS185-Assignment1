@@ -18,56 +18,94 @@
 		</div>
 	</nav>
 
-     <h1> Images </h1>
-    <div class="row">
-        <div class="column">
-           
-            <a href="images/animal-crossing-new-horizons-switch-screenshot01.jpg">
-			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot01.jpg" alt="Animal Crossing1">
-			</a> 
+     <h1 id = "h11"> Images </h1>
+	 
+	 <!-- This set of code enables image grids, enlarge/remove enlarge, and prev/next button
+	 	  It comes from the Youtube video: "Gallery Using HTML, CSS, And JavaScrip"
+		  Author: mmtuts
+		  Link: https://www.youtube.com/watch?v=dkLpo4shS6c -->
+
+	<section id="index-gallery" class = "wrapper-gallery">
+		<p> Nitendo Switch </p>
+		<h2> Animal Crossing Gallery</h2>
+
+		<div class = "gallery-img img1" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+
+		<div class = "gallery-img img2" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+
+		<div class = "gallery-img img3" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+	
+		<div class = "gallery-img img4" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+
+		<div class = "gallery-img img5" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+
+		<div class = "gallery-img img6" >
+			<div><a href="#">Click to view</a></div>
+		</div>
 		
-            <a href="images/animal-crossing-new-horizons-switch-screenshot02.jpg">
-			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot02.jpg" alt="Animal Crossing2">
-			</a>
-            <a href="images/animal-crossing-new-horizons-switch-screenshot04.jpg">
-			<img class = "img-img" src="images/animal-crossing-new-horizons-switch-screenshot04.jpg" alt="Animal Crossing4">
-			</a> 
+		<div class = "gallery-img img7" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
 
-			<a href="images/01_3DS_AnimalCrossingNL_DCC_Mayor_01.jpg">
-			<img class = "img-img" src="images/01_3DS_AnimalCrossingNL_DCC_Mayor_01.jpg" alt="Animal Crossing Mayor 01">
-			</a> 
-			<a href="images/02_3DS_AnimalCrossingNL_DCC_Mayor_02.jpg">
-			<img class = "img-img" src="images/02_3DS_AnimalCrossingNL_DCC_Mayor_02.jpg" alt="Animal Crossing Mayor 02">
-			</a> 
-			<a href="images/03_3DS_AnimalCrossingNL_DCC_Mayor_03.jpg">
-			<img class = "img-img" src="images/03_3DS_AnimalCrossingNL_DCC_Mayor_03.jpg" alt="Animal Crossing Mayor 03">
-			</a> 
+		<div class = "gallery-img img1" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+			
+		<div class = "gallery-img img8" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+	
+		<div class = "gallery-img img9" > 
+			<div><a href="#">Click to view</a></div> 
+		</div>
+	
+			
+    </section>
 
-			<a href="images/08_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_01.jpg">
-			<img class = "img-img" src="images/08_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_01.jpg" alt="Animal Crossing Island 01">
-			</a> 
-			<a href="images/07_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_02.jpg">
-			<img class = "img-img" src="images/07_3DS_AnimalCrossingNL_DCC_MultiPlayer_Island_02.jpg" alt="Animal Crossing Island 02">
-			</a> 
-
-			<a href="images/05_3DS_AnimalCrossingNL_DCC_Customization_02.jpg">
-			<img class = "img-img" src="images/05_3DS_AnimalCrossingNL_DCC_Customization_02.jpg" alt="Animal Crossing Customized">
-			</a> 
-
-			<p> <em>A series of screenshots from Animal Crossing:New Leaf</em> </p>
-        </div>
-    </div>
-<script src="main.js" type="text/javascript">
-document.getElementById("img-img").addEventListener("click",function()
-{
-	var box1 = document.getElementById("img-img")
-})
-</script>
-    
+	<!-- Gallery ends-->
+	<script src="gallery.js"></script>
 	<footer id="main-footer">
 	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p>
 </footer>
 
+
+
+<!-- Back to top botton begins-->
+<!-- code comes from W3schools, link: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+<button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- Back to top bottom ends-->
     </body>
 
 </html>
