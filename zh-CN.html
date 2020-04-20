@@ -5,22 +5,25 @@
 	<title>Hello World</title>
 	<link rel="stylesheet" type ="text/css" 
 	href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
 </head>
 
 <body>
 	<div id="main-header">
-		<h1>原始网站</h1>
+		<h1></h1>
 	</div>
+
+	
 	<nav id="navbar">
 		<div class="container">
 			<ul>
-				<li><a href="index.html">主页</a></li>
-				<li><a href="images.html">图片</a></li>
-				<li><a href="videos.html">视频</a></li>
-				<li><a href="#">联络</a></li>
-				<li><a href="index.html">English</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="images.html">Images</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a class="current" href="zh-CN.html">中文</a></li>
 			
 			</ul>
 		</div>
@@ -36,9 +39,9 @@
 	</section>
 		
 		<div class="links">
-			<a href="https://google.com">谷歌搜索</a> &nbsp; &nbsp;
-			<a href="https://github.com/zhouzhuang?tab=repositories">Github 链接</a> &nbsp; &nbsp;
-			<a href="https://github.com/zhouzhuang/CS185-Assignment1"></a> 
+			<a href="https://google.com">Google</a> &nbsp; &nbsp;
+			<a href="https://github.com/zhouzhuang?tab=repositories">My Github Repo Page</a> &nbsp; &nbsp;
+			<a href="https://github.com/zhouzhuang/CS185-Assignment1">Link to my master branch</a> 
 		</div>
 
 	<!--links end-->
@@ -76,30 +79,57 @@
 <br>
 <br>
 
-
+	
 <!-- Favorite snack starts -->
-	<div >
-		<div class="image" >
-			<h2>零食</h2>
-			<a href="images/pistachios.jpg">
-			<img src="images/pistachios.jpg" alt="Pistachios in a bowl">
-			</a>
-		</div>
-		<div class="p1"><span>
-				开心果是腰果家族的一员，是一棵小树，起源于中亚和
-中东。
-这棵树产生的种子被广泛用作食物。
-黄连木常与黄连木属中的其他物种混淆
-开心果。
-		
-		</span></div>
-	</div>
+	<div>
+			<h2>About me</h2>
+			
+			<div id="image-index" >
+			<div>
+			<img src="images/pistachios.jpg" alt="Pistachios in a bowl"  >
+			</a></div>
+
+			<span > 开心果是我最喜欢的零食。 <em>开心果，腰果科的一员，
+
+										是一种原产于中亚和中东的小树。
+
+										这棵树结出的种子被广泛用作食物。
+
+										开心果经常与阿月浑子属的其他物种混淆，也被称为阿月浑子。</em>
+			<br><br>
+				开心果不仅好吃有趣，而且超级健康。
+
+			这些可食用的黄连木种子含有健康的脂肪，是蛋白质、纤维和抗氧化剂的良好来源。
+
+			更重要的是，它们含有一些基本营养素，可以帮助减肥和心脏和肠道健康。
+
+			有趣的是，人们从公元前7000年就开始吃开心果了。如今，它们在许多菜肴中都很受欢迎，包括冰淇淋和甜点（1锈源）。
+
+			以下是开心果的9个循证健康益处。
+
+			<br><br>
+			更重要的是，它们美味，多才多艺，吃起来很有趣。对大多数人来说，在饮食中包括开心果是改善整体健康的好方法。
+
+</span>
+			
+			</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $('#image-index1').on("click", function(){
+         $('#mimage-index2').toggle();
+      });
+   });
+</script>
+	
 <!-- Favorite snack ends -->
 
 
 <footer id="main-footer">
-	<p>版权所有 &copy; 2020, 庄舟</p>
+	<p>Copyright &copy; 2020, Joe Zhuang's Website for CMPSC 185</p>
 </footer>
+
+
 <!-- Back to top botton begins-->
 <!-- code comes from W3schools, link: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
 <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top</button>
@@ -125,7 +155,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-<!-- Back to top botton ends-->
+<!-- Back to top bottom ends-->
 </body>
 
 </html>
